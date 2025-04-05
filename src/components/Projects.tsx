@@ -4,43 +4,52 @@ import ProjectCard, { Project } from "./ProjectCard";
 import { Button } from "@/components/ui/button";
 
 const Projects = () => {
-  // Sample projects data - replace with your actual projects
+  // Research projects data based on the CV
   const projects: Project[] = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-featured online store with cart, checkout, and payment integration.",
-      image: "https://images.unsplash.com/photo-1561069934-eee225952461?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-      techStack: ["React", "Node.js", "MongoDB", "Stripe"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/yourusername/project"
+      title: "Influencer Critiques of Brand Purpose",
+      description: "Examining follower engagement and sentiment across CSR themes on social media. Presented at the 18th Global Brand Conference 2025.",
+      image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      techStack: ["Sentiment Analysis", "Social Media", "CSR", "Brand Purpose"],
+      liveUrl: "#",
+      githubUrl: "#"
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "A Kanban-style task manager with drag and drop functionality.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-      techStack: ["Vue.js", "Firebase", "Tailwind CSS"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/yourusername/project"
+      title: "CancelWalmart: Influencer Criticism Analysis",
+      description: "Conceptualizing the values for which influencers criticize retailers. Presented at RARCS Conference 2024.",
+      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      techStack: ["Text Mining", "Thematic Analysis", "Consumer Behavior", "Digital Ethics"],
+      liveUrl: "#",
+      githubUrl: "#"
     },
     {
       id: 3,
-      title: "Weather Dashboard",
-      description: "Real-time weather information with interactive maps and forecasts.",
-      image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-      techStack: ["JavaScript", "OpenWeather API", "Chart.js"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/yourusername/project"
+      title: "The External Drivers of Sustainable Transition",
+      description: "A stage view of automotive electrification in China from 2000-2020. Co-authored research paper currently under review.",
+      image: "https://images.unsplash.com/photo-1593941707882-a5bba13938c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      techStack: ["Policy Analysis", "Sustainability", "China", "Automotive Industry"],
+      liveUrl: "#",
+      githubUrl: "#"
     },
     {
       id: 4,
-      title: "Social Media Dashboard",
-      description: "Analytics dashboard for managing multiple social media accounts.",
-      image: "https://images.unsplash.com/photo-1579869847514-7c1a19d2d2ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-      techStack: ["React", "Redux", "Material UI", "Social APIs"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/yourusername/project"
+      title: "Moralizing Brand Influencers",
+      description: "Conceptualizing the 'Missing SDG' - how social media influencers reprimand unsustainable consumption. Working paper targeting ABS 3 journal.",
+      image: "https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      techStack: ["Sustainable Development", "Influencer Marketing", "Social Media", "Brand Ethics"],
+      liveUrl: "#",
+      githubUrl: "#"
+    },
+    {
+      id: 5,
+      title: "#CallingoutNestle",
+      description: "Investigating the profile, communication intentions and message framing techniques of Moralizing Brand Influencers (MBIs).",
+      image: "https://images.unsplash.com/photo-1560472355-536de3962603?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      techStack: ["Communication Strategy", "Message Framing", "Influencer Analysis", "Brand Criticism"],
+      liveUrl: "#",
+      githubUrl: "#"
     }
   ];
 
@@ -54,10 +63,10 @@ const Projects = () => {
     <section id="projects" className="section-padding bg-secondary/30">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">My Projects</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">My Research</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Here are some of my recent projects. Each demonstrates different skills
-            and technologies from my development toolkit.
+            My research explores how social media influencers reprimand unsustainable consumption and 
+            influence corporate sustainability practices. Here are some of my recent and ongoing projects.
           </p>
         </div>
 

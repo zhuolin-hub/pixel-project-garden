@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/components/ui/use-toast";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, BookOpen } from "lucide-react";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -46,19 +46,25 @@ const Contact = () => {
     {
       icon: <Mail className="h-5 w-5 text-primary" />,
       title: "Email",
-      content: "your.email@example.com",
-      link: "mailto:your.email@example.com"
+      content: "xxxxxxxxx@glasgow.ac.uk",
+      link: "mailto:xxxxxxxxx@glasgow.ac.uk"
     },
     {
       icon: <Phone className="h-5 w-5 text-primary" />,
       title: "Phone",
-      content: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      content: "+44 73xxx (+86 xxx)",
+      link: "tel:+4473xxx"
     },
     {
       icon: <MapPin className="h-5 w-5 text-primary" />,
-      title: "Location",
-      content: "City, Country",
+      title: "University",
+      content: "Adam Smith Business School, University of Glasgow",
+      link: null
+    },
+    {
+      icon: <BookOpen className="h-5 w-5 text-primary" />,
+      title: "Research Focus",
+      content: "Digital Business, Consumer Engagement, Business Analytics",
       link: null
     }
   ];
@@ -69,7 +75,8 @@ const Contact = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Have a project in mind or want to chat? Feel free to reach out using the form below.
+            Interested in my research, academic collaboration, or want to discuss digital business?
+            Feel free to reach out using the form below.
           </p>
         </div>
 

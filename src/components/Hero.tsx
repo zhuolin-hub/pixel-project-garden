@@ -9,14 +9,15 @@ const Hero = () => {
       <div className="container mx-auto px-4 md:px-8 z-10 py-20 mt-16">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-            Hello, I'm <span className="text-secondary">Your Name</span>
+            Hello, I'm <span className="text-secondary">Z.</span>
           </h1>
           <h2 className="text-2xl md:text-3xl font-medium text-white/90 mb-8">
-            Full Stack Developer
+            Researcher & Educator in Digital Business
           </h2>
           <p className="text-lg text-white/80 mb-10 max-w-2xl">
-            I build responsive, user-friendly web applications with modern technologies.
-            Passionate about clean code and creative solutions to complex problems.
+            Specializing in Digital Business, Consumer Engagement, and Business Analytics with a focus on 
+            online public opinion, influencer critiques, and ethical consumption. Currently a PhD 
+            candidate at the University of Glasgow.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button
@@ -24,7 +25,7 @@ const Hero = () => {
               className="bg-white text-primary hover:bg-secondary"
               asChild
             >
-              <a href="#projects">View My Work</a>
+              <a href="#projects">View My Research</a>
             </Button>
             <Button
               size="lg"

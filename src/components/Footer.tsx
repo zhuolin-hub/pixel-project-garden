@@ -1,29 +1,29 @@
 
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { Github, Linkedin, Twitter, Mail, BookOpen } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   const socialLinks = [
     { 
-      name: "GitHub", 
-      icon: <Github className="h-5 w-5" />, 
-      url: "https://github.com/yourusername" 
+      name: "Email", 
+      icon: <Mail className="h-5 w-5" />, 
+      url: "mailto:xxxxxxxxx@glasgow.ac.uk" 
     },
     { 
       name: "LinkedIn", 
       icon: <Linkedin className="h-5 w-5" />, 
-      url: "https://linkedin.com/in/yourusername" 
+      url: "#" 
+    },
+    { 
+      name: "Academia", 
+      icon: <BookOpen className="h-5 w-5" />, 
+      url: "#" 
     },
     { 
       name: "Twitter", 
       icon: <Twitter className="h-5 w-5" />, 
-      url: "https://twitter.com/yourusername" 
-    },
-    { 
-      name: "Email", 
-      icon: <Mail className="h-5 w-5" />, 
-      url: "mailto:your.email@example.com" 
+      url: "#" 
     }
   ];
 
@@ -32,8 +32,8 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
-            <h3 className="text-xl font-bold">Your Name</h3>
-            <p className="text-white/80 mt-1">Full Stack Developer</p>
+            <h3 className="text-xl font-bold">Z.</h3>
+            <p className="text-white/80 mt-1">Researcher & Educator in Digital Business</p>
           </div>
           
           <div className="flex space-x-4">
@@ -53,9 +53,9 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/60">
-          <p>© {currentYear} Your Name. All rights reserved.</p>
+          <p>© {currentYear} Z. All rights reserved.</p>
           <p className="mt-2 text-sm">
-            Designed and built with ❤️ using React, Tailwind CSS, and TypeScript
+            Adam Smith Business School, University of Glasgow
           </p>
         </div>
       </div>
